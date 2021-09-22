@@ -33,7 +33,8 @@ Using data visualizations, business users can see seasonal trends and dig deeper
 
 ## Classification and considerations
 
-While time series data is data collected over time, there are different types of data that describe how and when that time data was recorded. For example:
+While time series data is data collected over time, there are different types of data that describe how and when that time data was recorded. 
+For example:
 
     * Time series data is data that is recorded over consistent intervals of time.
     * Cross-sectional data consists of several variables recorded at the same time.
@@ -53,7 +54,8 @@ In time series data, variations can occur sporadically throughout the data:
     * Seasonal variation describes events that occur at specific and regular intervals during the course of a year. 
       Serial dependence occurs when data points close together in time tend to be related.
 
-Time series analysis and forecasting models must define the types of data relevant to answering the business question. Once analysts have chosen the relevant data they want to analyze, they choose what types of analysis and techniques are the best fit.
+Time series analysis and forecasting models must define the types of data relevant to answering the business question. 
+Once analysts have chosen the relevant data they want to analyze, they choose what types of analysis and techniques are the best fit.
 
  
 ## Types of time series analysis
@@ -65,7 +67,8 @@ Even within time series analysis, there are different types and models of analys
     Descriptive analysis: Identifies patterns in time series data, like trends, cycles, or seasonal variation.
     Explanative analysis: Attempts to understand the data and the relationships within it, as well as cause and effect.
     Exploratory analysis: Highlights the main characteristics of the time series data, usually in a visual format.
-    Forecasting: Predicts future data. This type is based on historical trends. It uses the historical data as a model for future data, predicting scenarios that could happen along future plot points.
+    Forecasting: Predicts future data. This type is based on historical trends. It uses the historical data as a model for future data, 
+    predicting scenarios that could happen along future plot points.
     Intervention analysis: Studies how an event can change the data.
     Segmentation: Splits the data into segments to show the underlying properties of the source information.
 
@@ -80,8 +83,10 @@ Just as there are many types and models, there are also a variety of methods to 
     Analysts have to account for and remove as many differences and seasonality in past data points as they can. 
     Thankfully, the ARIMA model includes terms to account for moving averages, seasonal difference operators, and autoregressive terms within the model.
     
-    2. Box-Jenkins Multivariate Models: Multivariate models are used to analyze more than one time-dependent variable, such as temperature and humidity, over time.
-    3. Holt-Winters Method: The Holt-Winters method is an exponential smoothing technique. It is designed to predict outcomes, provided that the data points include seasonality.
+    2. Box-Jenkins Multivariate Models: Multivariate models are used to analyze more than one time-dependent variable, 
+       such as temperature and humidity, over time.
+    3. Holt-Winters Method: The Holt-Winters method is an exponential smoothing technique. It is designed to predict outcomes, 
+        provided that the data points include seasonality.
     
     
   ## Autocorrelation
@@ -93,7 +98,7 @@ Above is an example of an autocorrelation plot. Looking closely, you realize tha
 
 Notice how the plot looks like sinusoidal function. This is a hint for seasonality, and you can find its value by finding the period in the plot above, which would give 24h.
     
-    ![Autocorrelation](https://user-images.githubusercontent.com/86042628/134364499-0626daf5-c0e4-4d72-8251-40cc9705bbf0.png)
+![Autocorrelation](https://user-images.githubusercontent.com/86042628/134364499-0626daf5-c0e4-4d72-8251-40cc9705bbf0.png)
 
     
   ## Seasonality
@@ -104,11 +109,12 @@ Example of seasonality
 As you can see above, there is a clear daily seasonality. 
 Every day, you see a peak towards the evening, and the lowest points are the beginning and the end of each day.
 Remember that seasonality can also be **derived from an autocorrelation plot** if it has a **sinusoidal shape.** Simply look at the period, and it gives the length of the season. 
-    ![Seasonality](https://user-images.githubusercontent.com/86042628/134364917-9851d39e-6dfe-4b3d-ae5e-42347cd5eb42.png)
+![Seasonality](https://user-images.githubusercontent.com/86042628/134364917-9851d39e-6dfe-4b3d-ae5e-42347cd5eb42.png)
     
 ## Stationarity
 
-Stationarity is an important characteristic of time series. A time series is said to be stationary if its statistical properties do not change over time. In other words, it has constant mean and variance, and covariance is independent of time.
+Stationarity is an important characteristic of time series. A time series is said to be stationary if its statistical properties do not change over time. 
+In other words, it has constant mean and variance, and covariance is independent of time.
 Example of a stationary process
 ![Stationary](https://user-images.githubusercontent.com/86042628/134365078-5b180c89-26be-4019-8d53-fa17bbaade4f.png)
 
