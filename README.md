@@ -77,16 +77,18 @@ Even within time series analysis, there are different types and models of analys
 
 Just as there are many types and models, there are also a variety of methods to study data. Here are the three most common.
 
-    1. Box-Jenkins ARIMA models: These univariate models are used to better understand a single time-dependent variable, such as temperature over time, 
-    and to predict future data points of variables. 
-    These models work on the assumption that the data is stationary. 
-    Analysts have to account for and remove as many differences and seasonality in past data points as they can. 
-    Thankfully, the ARIMA model includes terms to account for moving averages, seasonal difference operators, and autoregressive terms within the model.
+    1. Box-Jenkins ARIMA models: These univariate models are used to better understand a single time-dependent variable, 
+      such as temperature over time, and to predict future data points of variables. 
+      These models work on the assumption that the data is stationary. 
+      Analysts have to account for and remove as many differences and seasonality in past data points as they can. 
+      Thankfully, the ARIMA model includes terms to account for moving averages, seasonal difference operators, 
+       and autoregressive terms within the model.
     
     2. Box-Jenkins Multivariate Models: Multivariate models are used to analyze more than one time-dependent variable, 
        such as temperature and humidity, over time.
-    3. Holt-Winters Method: The Holt-Winters method is an exponential smoothing technique. It is designed to predict outcomes, 
-        provided that the data points include seasonality.
+       
+    3. Holt-Winters Method: The Holt-Winters method is an exponential smoothing technique. 
+       It is designed to predict outcomes, provided that the data points include seasonality.
     
     
   ## Autocorrelation
